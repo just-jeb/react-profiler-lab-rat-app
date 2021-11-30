@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import { List } from './List';
-import { Chance } from 'chance';
-
-const chance = new Chance();
-
-const items = Array.from({length: 200}, () => `${chance.integer()}`);
+import { FilterableList } from './FilterableList';
+import { Header } from './Header';
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState('');
+
   return (
     <div className="App">
-      <input type="text" onChange={(event) => setSearchTerm(event.target.value)}/>
-      <List entries={items.filter(item => item.includes(searchTerm))}/>
+      <Header/>
+      <FilterableList/>
     </div>
   );
 }
