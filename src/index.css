@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0D1321;
+  --accent-color: #EE7B30;
+  --gradient-accent-color-2: #FAC748;
+  --gradient-accent-color-1: #FE5F55;
+  --secondary-color: #FAC748;
 }
 
 code {

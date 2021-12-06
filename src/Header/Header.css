@@ -1,0 +1,5 @@
+.header {
+    font-size: 4rem;
+    color: var(--gradient-accent-color-1);
+    margin: 10px;
+}

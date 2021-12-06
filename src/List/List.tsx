@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import './App.css';
-import { ListItem } from './ListItem';
+import './List.css';
+import { ListItem } from '../ListItem/ListItem';
 
 export interface ListProps {
   entries: {value: string, id: number}[];
@@ -8,7 +8,7 @@ export interface ListProps {
 
 export const List: FC<ListProps> = ({entries}) => {
   return (
-    <div className="App">
+    <div className="list">
       {entries.map(({id, value}) => 
         <ListItem key={id} value={value}/>
       )}

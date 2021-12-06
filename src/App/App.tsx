@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import { FilterableList } from './FilterableList';
-import { Header } from './Header';
+import { FilterableList } from '../FilterableList/FilterableList';
+import { Header } from '../Header/Header';
 
 function App() {
 

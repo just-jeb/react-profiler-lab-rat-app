@@ -1,0 +1,11 @@
+.item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: transform .2s; /* Animation */
+    width: 50%;
+    font-size: 1.3rem;
+}
+
+.item:hover {
+    transform: scale(1.2);
+}
