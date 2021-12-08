@@ -5,12 +5,12 @@ import { List } from '../List/List';
 import { Filter } from '../Filter/Filter';
 const chance = new Chance();
 
-const items = Array.from({ length: 200 }, (_, index) => ({ value: `${chance.integer()}`, id: index}));
+const items = Array.from({ length: 200 }, (_, index) => (`${chance.integer()}`));
 
 export const FilterableList = () => {
     const [searchTerm, setSearchTerm] = useState('');
     return <div className={'filterableList'}>
         <Filter onValueUpdated={setSearchTerm} />
-        <List entries={items.filter(item => item.value.includes(searchTerm))} />
+        <List entries={items.filter(item => item.includes(searchTerm))} />
     </div>
 }

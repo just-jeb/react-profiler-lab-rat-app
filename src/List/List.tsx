@@ -3,14 +3,14 @@ import './List.css';
 import { ListItem } from '../ListItem/ListItem';
 
 export interface ListProps {
-  entries: {value: string, id: number}[];
+  entries: string[];
 }
 
 export const List: FC<ListProps> = ({entries}) => {
   return (
     <div className="list">
-      {entries.map(({id, value}) => 
-        <ListItem key={id} value={value}/>
+      {entries.map((value, index) => 
+        <ListItem key={index} value={value}/>
       )}
     </div>
   );

@@ -1,7 +1,7 @@
-import React, { FC, memo } from 'react';
+import React, { FC } from 'react';
 import './ListItem.css';
 interface ListItemProps {
     value: string;
 }
 
-export const ListItem: FC<ListItemProps> = memo(({value}) => <div className={'item'}>{value}</div>)
+export const ListItem: FC<ListItemProps> = ({value}) => <div className={'item'}>{value}</div>
