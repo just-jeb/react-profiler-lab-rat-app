@@ -5,7 +5,7 @@ import { List } from '../List/List';
 import { Filter } from '../Filter/Filter';
 const chance = new Chance();
 
-const items = Array.from({ length: 200 }, (_, index) => (`${chance.integer()}`));
+const items = Array.from({ length: 200 }, () => `${chance.integer()}`);
 
 export const FilterableList = () => {
     const [searchTerm, setSearchTerm] = useState('');
